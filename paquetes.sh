@@ -4,3 +4,5 @@
 pacman -Syu --noconfirm
 
 # Instalar
+#
+pacman -Syu --noconfirm
