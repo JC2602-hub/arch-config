@@ -13,4 +13,25 @@ systemctl enable NetworkManager
 systemctl enable cups.service
 systemctl enable fstrim.timer
 systemctl enable power-profiles-daemon
+systemctl enable reflector.timer
 
+# Instalar bootloader
+#
+pacman -S --noconfirm grub mtools dosfstools os-prober 
+
+grub-install --target=i386-pc --recheck /dev/sda
+
+grub-mkconfig - o /boot/grub/grub.cfg
+
+# Instalar drivers graficos
+#
+pacman -S mesa libva-intel-driver libva-utils
+
+# Instalar Plasma
+#
+pacman -S --noconfirm plasma kde-system-meta kde-utilities-meta kde-sdk-meta kde-graphics-meta git pipewire pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack alsa-utils packagekit-qt6 discord telegram-desktop calibre firefox firefox-i18n-es-ar libreoffice-fresh libreoffice-fresh-es hunspell hunspell-es_any hyphen hyphen-es
+
+systemctl enable sddm
+
+
+echo "Instalacion Completa"
