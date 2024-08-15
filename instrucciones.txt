@@ -1,0 +1,41 @@
+pacstrap -K /mnt base linux-firmware neovim intel-ucode git
+
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot  /mnt
+
+nvim /etc/pacman.conf Habilitar descargas paralelas
+
+ln -sf  /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
+
+hwclock --systohc
+
+nvim /etc/locale.gen descomentar en_US.UTF-8 UTF-8 y es_AR.UTF-8 UTF-8
+
+locale-gen
+
+nvim /etc/locale.conf agregar LANG=es_AR.UTF-8
+
+nvim /etc/hostname agregar nombre
+
+nvim /etc/hosts agregar
+
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   hostname.localdomain    hostname
+
+passwd crear la contraseña de root
+
+Instalar paquetes.sh 
+
+useradd -m -G wheel juan
+
+passwd juan
+
+Despues de reiniciar:
+
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin
+makepkg -si PKGBUILD
+
+paru -S ttf-ms-win11-auto enpass-bin

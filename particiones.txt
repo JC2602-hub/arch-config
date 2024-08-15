@@ -1,0 +1,23 @@
+BIOS/GPT
+
+gdisk nombre del disco
+
+o para crear una nueva tabla de particiones
+
+n para crear una nueva particion
+last sector +1M
+tipo de particion ef02
+
+n
+last sector +45G
+tipo de particion 8304
+
+n
+last sector +4G
+tipo de particion 8200
+
+n
+resto del disco
+tipo de particion 8302
+
+w 
