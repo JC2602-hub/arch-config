@@ -6,7 +6,7 @@ pacman -Syu --noconfirm
 
 # Instalar paquetes basicos mas KDE pre-requisitos
 
-pacman -S --noconfirm ntfs-3g linux-headers base-devel networkmanager network-manager-applet wpa_supplicant wireless_tools dialog cups cups-pdf xdg-utils xdg-user-dirs print-manager reflector gufw xterm unzip unrar p7zip baloo-widgets dolphin-plugins ffmpegthumbs kde-inotify-survey kdeconnect kdegraphics-thumbnailers kdenetwork-filesharing kimageformats kio-admin kio-extras kio-fuse kio-gdrive libappindicator-gtk3 phonon-qt6-vlc qt6-imageformats xwaylandvideobridge icoutils iio-sensor-proxy maliit-keyboard power-profiles-daemon xdg-desktop-portal-gtk xsettingsd
+pacman -S --noconfirm ntfs-3g linux-headers base-devel networkmanager network-manager-applet wpa_supplicant wireless_tools dialog cups cups-pdf xdg-utils xdg-user-dirs print-manager reflector gufw xterm unzip unrar p7zip baloo-widgets dolphin-plugins ffmpegthumbs kde-inotify-survey kdeconnect kdegraphics-thumbnailers kdenetwork-filesharing kimageformats kio-admin kio-extras kio-fuse kio-gdrive libappindicator-gtk3 phonon-qt6-vlc qt6-imageformats xwaylandvideobridge icoutils iio-sensor-proxy maliit-keyboard power-profiles-daemon xdg-desktop-portal-gtk xsettingsd pacman-contrib
 
 # Instalar fuentes
 
