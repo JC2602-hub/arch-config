@@ -10,7 +10,7 @@ pacman -S --noconfirm ntfs-3g linux-headers base-devel networkmanager network-ma
 
 # Instalar fuentes
 
-pacman -S --noconfirm noto-fonts ttf-liberation ttf-ubuntu-font-family ttf-anonymous-pro ttf-bitstream-vera adobe-source-sans-pro-fonts noto-fonts-cjk noto-fonts-emoji ttf-croscore ttf-dejavu ttf-ibm-plex ttf-jetbrains-mono ttf-liberation cantrell-fonts inter-font ttf-caladea ttf-carlito ttf-cascadia-code ttf-droid ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-inconsolata ttf-opensans ttf-roboto
+pacman -S --noconfirm noto-fonts ttf-liberation ttf-ubuntu-font-family ttf-anonymous-pro ttf-bitstream-vera adobe-source-sans-pro-fonts noto-fonts-cjk noto-fonts-emoji ttf-croscore ttf-dejavu ttf-ibm-plex ttf-jetbrains-mono ttf-liberation cantrell-fonts inter-font ttf-caladea ttf-carlito ttf-cascadia-code ttf-droid ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-inconsolata ttf-opensans ttf-roboto thermald
 
 # Habilatar servicios
 
@@ -22,6 +22,7 @@ systemctl enable reflector.timer
 systemctl enable ufw.service
 systemctl enable systemd-timesyncd.service
 systemctl enable paccache.timer
+systemctl enable thermald.service
 
 # Instalar bootloader
 
